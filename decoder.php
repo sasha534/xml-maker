@@ -32,5 +32,11 @@ $json = '{
     }
 }';
 
-var_dump(json_decode($json));
-var_dump(json_decode($json, true));
+foreach(json_decode($json) as $item){
+    foreach($item as $item1) {
+        echo $item1."</br>";
+    }
+}
+
+//var_dump(json_decode($json));
+//var_dump(json_decode($json, true));
