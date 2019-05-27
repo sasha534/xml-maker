@@ -32,9 +32,9 @@ $json = '{
     }
 }';
 
-foreach(json_decode($json) as $item){
-    foreach($item as $item1) {
-        echo $item1."</br>";
+foreach(json_decode($json) as $name => $item){
+    foreach($item as $key => $item1) {
+        echo $name.'-------------'.$key.'-------'.$item1."</br>";
     }
 }
 
